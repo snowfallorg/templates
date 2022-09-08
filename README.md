@@ -15,7 +15,7 @@
   
 </p>
 
-> Create new flakes for use with [Snowfall Lib](https://github.com/snowfallorg/lib).
+> Create new flakes for use with [@snowfallorg/lib](https://github.com/snowfallorg/lib).
 
 ## Usage
 
