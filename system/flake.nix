@@ -2,7 +2,7 @@
   description = "My NixOS / nix-darwin / nixos-generators systems";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/release-22.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
     unstable.url = "github:nixos/nixpkgs";
 
     snowfall = {
