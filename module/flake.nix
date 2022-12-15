@@ -2,17 +2,17 @@
   description = "My NixOS modules";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
-    unstable.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.11";
+    unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    snowfall = {
+    snowfall-lib = {
       url = "github:snowfallorg/lib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
   outputs = inputs:
-    inputs.snowfall.mkFlake {
+    inputs.snowfall-lib.mkFlake {
       inherit inputs;
 
       src = ./.;
