@@ -2,7 +2,14 @@
   description = "Snowfall templates";
 
   outputs = { self }: {
-    templates = {
+    templates = rec {
+      default = empty;
+
+      empty = {
+        path = ./empty;
+        description = "A Nix Flake using snowfall-lib";
+      };
+
       system = {
         path = ./system;
         description = "A Nix flake with a NixOS system and modules ready to modify.";
