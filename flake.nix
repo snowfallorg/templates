@@ -1,5 +1,5 @@
 {
-  description = "Snowfall templates";
+  description = "Snowfall Templates";
 
   outputs = { self }: {
     templates = rec {
