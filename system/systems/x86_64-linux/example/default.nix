@@ -16,5 +16,5 @@
     firefox
   ];
 
-  system.stateVerison = "22.05";
+  system.stateVersion = "22.05";
 }
