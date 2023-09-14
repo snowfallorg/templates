@@ -28,7 +28,9 @@ nix flake init -t github:snowfallorg/templates#<template-name>
 ## Available Templates
 
 | Name      | Description                                       |
-|-----------|---------------------------------------------------|
+| --------- | ------------------------------------------------- |
+| `empty`   | A NixOS system and modules ready to modify.       |
+| `home`    | A Nix Flake that exports a custom `lib`           |
 | `system`  | A NixOS system and modules ready to modify.       |
 | `package` | A Nix Flake that exports packages and an overlay. |
 | `module`  | A Nix Flake that exports NixOS modules.           |

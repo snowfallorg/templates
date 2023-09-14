@@ -1,6 +1,4 @@
-{ modulesPath, ... }:
-
-{
+{modulesPath, ...}: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
@@ -16,7 +14,7 @@
   };
 
   swapDevices = [
-    { device = "/dev/disk/by-label/swap"; }
+    {device = "/dev/disk/by-label/swap";}
   ];
 
   networking.useDHCP = true;

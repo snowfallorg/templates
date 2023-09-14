@@ -1,14 +1,12 @@
-{ pkgs, ... }:
-
-{
-  imports = [ ./hardware.nix ];
+{pkgs, ...}: {
+  imports = [./hardware.nix];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   users.users.example = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = ["wheel"];
   };
 
   environment.systemPackages = with pkgs; [
