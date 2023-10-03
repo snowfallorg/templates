@@ -29,6 +29,11 @@
         path = ./lib;
         description = "A Nix Flake that exports a custom lib.";
       };
+
+      home = {
+        path = ./home;
+        description = "A Nix Flake that exports home manager.";
+      };
     };
   };
 }
