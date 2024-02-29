@@ -14,5 +14,8 @@
     firefox
   ];
 
+  # Configure Home-Manager options from NixOS.
+  snowfallorg.user.example.home.config = {};
+
   system.stateVersion = "23.11";
 }
