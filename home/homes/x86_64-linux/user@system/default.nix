@@ -9,16 +9,20 @@ let
   name = config.snowfallorg.user.name;
   home = config.snowfallorg.user.home.directory;
 in {
-  home.packages = with pkgs; [
-    neovim
-    firefox
-  ];
+  home = {
+    packages = with pkgs; [
+      neovim
+      firefox
+    ];
 
-  sessionVariables = {
-    EDITOR = "nvim";
-  };
+    sessionVariables = {
+      EDITOR = "nvim";
+    };
 
-  shellAliases = {
-    vimdiff = "nvim -d";
+    shellAliases = {
+      vimdiff = "nvim -d";
+    };
+
+    stateVersion = "23.11";
   };
 }
